@@ -1,12 +1,24 @@
 {
   "name": "meizu.com",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa344646/meizu.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aa344646/meizu.com/issues"
+  },
+  "homepage": "https://github.com/aa344646/meizu.com#readme",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "jquery.js": "0.0.2-security"
+  }
 }
