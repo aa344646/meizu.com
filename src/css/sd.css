@@ -1,0 +1,37 @@
+#lunbobox {
+	width:1519px;
+	height:600px;
+	position:relative;
+	z-index: -1;
+}
+.lunbo {
+	width:1519px;
+	height:600px;
+}
+.lunbo img {
+	width:1519px;
+	height:600px;	
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#lunbobox ul {
+	width:285px;
+	position:absolute;
+	bottom:10px;
+	right:550px;
+	z-index:5;
+}
+#lunbobox ul li {
+
+	width:10px;
+	height:10px;
+	border:1px solid #ffffff;
+	float:left;
+	border-radius: 50%;
+	list-style:none;
+	background:#ffffff;
+	text-align:center;
+	margin:0px 15px 0px 0px;
+	cursor:pointer;
+}
