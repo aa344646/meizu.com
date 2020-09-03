@@ -1,0 +1,139 @@
+header {
+  width: 100%;
+  height: 82px;
+  position: absolute;
+  transition: all 0.3s;
+  top: 0px;
+  z-index: 999;
+}
+header .wrap-container {
+  width: 1240px;
+  height: 82px;
+  margin: 0 auto;
+  z-index: 999;
+}
+header .wrap-container .login {
+  width: 125px;
+  height: 100%;
+  float: left;
+}
+header .wrap-container .cart {
+  width: 29px;
+  height: 55px;
+  margin: 27px 0 0 8px;
+  text-align: center;
+  float: right;
+}
+header .wrap-container .cart a {
+  width: 29px;
+  height: 29px;
+  display: block;
+  position: relative;
+}
+header .wrap-container .cart a img {
+  width: 100%;
+  height: 100%;
+}
+header .wrap-container .cart a em {
+  font-size: 1em;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c00;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 4px;
+  text-indent: 0;
+}
+header .wrap-container .photo {
+  float: right;
+  width: 37px;
+  margin: 27px 0 0 8px;
+  text-align: center;
+  position: relative;
+}
+header .wrap-container .photo img {
+  width: 29px;
+  height: 29px;
+}
+header .wrap-container .photo .p-ul {
+  width: 98px;
+  position: absolute;
+  right: 0;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 15px 0;
+  margin-left: -48px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+header .wrap-container .photo .p-ul li:nth-child(1) {
+  margin-top: 0;
+}
+header .wrap-container .photo .p-ul li {
+  font-size: 12px;
+  margin: 15px auto;
+}
+header .wrap-container .photo .p-ul li a {
+  color: #999999;
+  text-decoration: none;
+}
+header .wrap-container .photo .p-ul li a:hover {
+  color: #515151;
+}
+header .wrap-container .photo:hover .p-ul {
+  display: block;
+}
+header .wrap-container .search {
+  width: 170px;
+  height: 30px;
+  font-size: 12px;
+  margin: 27px 0 0 8px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #999;
+  float: right;
+  line-height: 82px;
+  position: relative;
+}
+header .wrap-container .search input {
+  display: block;
+  border: none;
+  outline: none;
+  width: 127px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+header .wrap-container .search span {
+  display: block;
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  font-size: 16px;
+}
+header .wrap-container .list {
+  float: right;
+  list-style: none;
+}
+header .wrap-container .list li {
+  float: left;
+}
+header .wrap-container .list li a {
+  display: block;
+  padding: 31px 20px 30px;
+  line-height: 21px;
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+}
+header .wrap-container .list li a:hover {
+  color: #00a7ca;
+}

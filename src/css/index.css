@@ -219,6 +219,20 @@
   width: 100%;
   height: 450px;
 }
+#sec1_img img:hover {
+  opacity: 0.7;
+}
+#sec1_imgq {
+  width: 100%;
+  height: 450px;
+}
+#sec1_imgq img {
+  width: 100%;
+  height: 450px;
+}
+#sec1_imgq img:hover {
+  opacity: 0.7;
+}
 #sec2 {
   width: 100%;
   height: 650px;
@@ -368,6 +382,7 @@
   height: 420px;
   background: #f4f4f4;
   position: relative;
+  overflow: hidden;
 }
 #sec3 .sec3_div {
   width: 82%;
@@ -429,7 +444,13 @@
   font-size: 22px;
 }
 #bg1_img {
-  background: url(../images/img/img/bg/bg1.jpg) !important;
+  background: url(../images/img/img/bg/bg1.jpg) no-repeat !important;
+}
+#bg2_img {
+  background: url(../images/img/img/bg/bg2.jpg) no-repeat !important;
+}
+#bg3_img {
+  background: url(../images/img/img/bg/bg3.jpg) no-repeat !important;
 }
 .box_s1 {
   color: white;
@@ -448,4 +469,80 @@
 }
 .bgcolor {
   background: white;
+}
+footer {
+  width: 1000px;
+  height: 71px;
+  margin: 24px auto 30px;
+}
+footer .f_top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+footer .f_top ul {
+  list-style: none;
+  font-size: 12px;
+  width: 445px;
+  float: left;
+}
+footer .f_top ul li {
+  float: left;
+}
+footer .f_top ul li span {
+  padding: 0 10px;
+}
+footer .f_top div {
+  width: 252px;
+  list-style: none;
+  font-size: 14px;
+  float: left;
+}
+footer .f_top div li:first-child {
+  float: left;
+}
+footer .f_top div li:last-child {
+  width: 68px;
+  float: right;
+  background-color: #1ba4e4;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+footer .f_top .connect {
+  float: right;
+  width: 200px;
+  height: 51px !important;
+  padding-top: 9px;
+  list-style: none;
+}
+footer .f_top .connect li {
+  float: left;
+  width: 40px;
+  height: 76%;
+}
+footer .f_top .connect li:nth-child(1) {
+  background: url(../images/connect.png) no-repeat -218px -85px;
+}
+footer .f_top .connect li:nth-child(1):hover {
+  background: url(../images/connect.png) no-repeat -218px -132px;
+}
+footer .f_top .connect li:nth-child(2) {
+  background: url(../images/connect.png) no-repeat -258px -85px;
+}
+footer .f_top .connect li:nth-child(2):hover {
+  background: url(../images/connect.png) no-repeat -258px -132px;
+}
+footer .f_top .connect li:nth-child(3) {
+  background: url(../images/connect.png) no-repeat -294px -85px;
+}
+footer .f_top .connect li:nth-child(3):hover {
+  background: url(../images/connect.png) no-repeat -294px -132px;
+}
+footer .f_top .connect li:nth-child(4) {
+  background: url(../images/connect.png) no-repeat -334px -85px;
+}
+footer .f_top .connect li:nth-child(4):hover {
+  background: url(../images/connect.png) no-repeat -334px -132px;
 }

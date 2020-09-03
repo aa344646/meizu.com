@@ -243,6 +243,20 @@
     img{
         width: 100%;
         height: 450px;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+#sec1_imgq{
+    width: 100%;
+    height: 450px;
+    img{
+        width: 100%;
+        height: 450px;
+        &:hover{
+            opacity: 0.7;
+        }
     }
 }
 #sec2{
@@ -423,6 +437,7 @@
     height: 420px;
     background: #f4f4f4;
     position: relative;
+    overflow: hidden;
    
     .sec3_div{
         width: 82%;
@@ -492,7 +507,13 @@
     }
 }
 #bg1_img{
-    background: url(../images/img/img/bg/bg1.jpg)!important ;
+    background: url(../images/img/img/bg/bg1.jpg) no-repeat!important ;
+}
+#bg2_img{
+    background: url(../images/img/img/bg/bg2.jpg) no-repeat!important ;
+}
+#bg3_img{
+    background: url(../images/img/img/bg/bg3.jpg) no-repeat!important ;
 }
 .box_s1{
     color: white;
@@ -514,3 +535,5 @@
 .bgcolor{
     background: white;
 }
+
+@import '../styles/ft.less';

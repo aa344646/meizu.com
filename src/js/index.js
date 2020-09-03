@@ -1,7 +1,12 @@
+
 import $ from './jquery.js';
 import './jquery.lazyload.js';
 import{cookie}from"../js/cookie.js";
 // import { ajax } from 'jquery';//
+
+
+
+
 
 $(document).ready(function () { 
     if(cookie.get('isLogined')){
@@ -141,9 +146,100 @@ var index = 0;
    
  
 
-
               
+     (function(){
+        $.ajax({
+            type: "get",
+            url:"../../interface/getproduct.php",
+            dataType: "json",
+            success:function(res){
+                let temp='';
+                let tt=[];
+                let pr=[];
+                let srcarr=[];
+                res.forEach((elm,i)=>{
+                    let pic=JSON.parse(elm.img);
+                    tt.push(elm.title)
+                    pr.push(elm.price)
+                    srcarr.push(pic)
+                });
+                console.log(tt);
+                console.log(pr);
 
+      temp=`<div id="sec2">
+                    <div class="sec2_img1">
+                        <span class="sec2_icon">赠品</span>
+                        <span class="box_info">
+                            <span class="ft1">${tt[0]}</span>
+                            <span class="ft2">限时领券至高立省200+赠全新壳膜套装</span>
+                            <span class="ft3">￥${pr[0]}</span>
+                        </span>
+                        <div class="sec2_logo1">
+                        <a href="./gdsdtl.html?id=1"><img class="imgq" src="${srcarr[0][4].src}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="sec2_img2">
+                        <span class="sec2_icon1">赠品</span>
+                        <span class="box_info1">
+                            <span class="f1">${tt[1]}</span>
+                            <span class="f2">限时领券至高立省200+赠全新壳膜套装</span>
+                            <span class="f3">￥${pr[1]}</span>
+                        </span>
+                        <div class="sec2_logo2">
+                        <a href="./gdsdtl.html?id=4"> <img class="imgq" src="${srcarr[1][4].src}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sec3">
+                    <div class="sec3_div">
+                        <ul>
+                            <li>
+                            <a href="./gdsdtl.html?id=5">   <img class="imgq" src="../images/img/img/sec3/sec3_1.png" alt=""></a>
+                                <span class="box_1">
+                                    <span class="box_sp1">${tt[2]}</span>
+                                    <span class="box_sp2">以梦为舰热爱起航</span>
+                                    <span class="box_sp3">￥${pr[2]}</span>
+                                </span>
+                            </li>
+                            <li>
+                            <a href="./gdsdtl.html?id=6">   <img class="imgq" src="${srcarr[2][4].src}" alt=""></a>
+                                <span class="box_1">
+                                    <span class="box_sp1">${tt[3]}</span>
+                                    <span class="box_sp2">6.5英寸极边全面屏|骁龙855旗舰处理器</span>
+                                    <span class="box_sp3">￥${pr[3]}</span>
+                                </span>
+                            </li>
+                            <li>
+                            <a href="./gdsdtl.html?id=2">    <img class="imgq" src="${srcarr[3][4].src}" alt=""></a>
+                                <span class="box_1">
+                                    <span class="box_sp1">${tt[4]}
+                                    </span>
+                                    <span class="box_sp2">以梦为舰热爱起航</span>
+                                    <span class="box_sp3">￥${pr[4]}</span>
+                                </span>
+                            </li>
+                            <li>
+                            <a href="./gdsdtl.html?id=3">   <img class="imgq" src="${srcarr[1][4].src}" alt=""></a>
+                                <span class="box_1">
+                                    <span class="box_sp1">${tt[5]}</span>
+                                    <span class="box_sp2">高通骁龙855 Plus|索尼480OWAl三摄
+                                    </span>
+                                    <span class="box_sp3">￥${pr[5]}</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>`;
+            
+
+
+                $('#sec1_img').after(temp);
+              
+            }
+        });
+    })();
+    
+    
 
 
 
