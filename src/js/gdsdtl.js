@@ -18,6 +18,7 @@ $('footer').html(ft);
         dataType: "json",
         success:function(res){
             let pic=JSON.parse(res.img);
+          
             let template=`<div id="nav">
             <div>
                 <span>${res.title}</span>
@@ -110,9 +111,9 @@ $('footer').html(ft);
                 <br>
                 <span>数量</span>
                 <div>
-                    <button>-</button>
-                    <input type="number" name="num" id="num" placeholder="" value="10">
-                    <button>+</button>
+                    <button id="sub1">-</button>
+                    <input type="number" name="num" id="num" placeholder="" value="0" >
+                    <button id="add1">+</button>
                 </div>
             </div>
             <div class="btn1">
@@ -130,6 +131,28 @@ $('footer').html(ft);
                 addItem(res.id, res.price, $('#num').val());
                 location.href="../html/shopcar.html";
             });
+            $('#sec1').find('#sub1').on("click",function(){
+                if ($('#num').val()==0){
+                    $('#num').attr("value","0")
+                }else {
+                    let num1=parseInt( $('#num').val()-1);
+                    $('#num').attr("value",num1)
+               };
+               
+            });
+
+           
+            $('#sec1').find('#add1').on("click",function(){
+                if (parseInt($('#num').val())>=res.num){
+                    alert("超过最大库存数量");
+                    console.log(res.num);
+                }else {
+                    let num1=parseInt( $('#num').val())+1;
+                    $('#num').attr("value",num1)
+               };
+            });
+
+
         }
     });
 
